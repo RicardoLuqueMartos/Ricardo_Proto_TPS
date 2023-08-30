@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
+  destroyMyCollider: 1
 --- !u!1 &5358434302240881081
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
+  destroyMyCollider: 1
 --- !u!1 &5358458826289701097
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
+  destroyMyCollider: 1
 --- !u!1 &5358506906633819583
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
+  destroyMyCollider: 1
 --- !u!1 &5358597840138082155
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,3 +750,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 2
+  destroyMyCollider: 1

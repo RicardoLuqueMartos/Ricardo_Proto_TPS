@@ -5,6 +5,7 @@ using UnityEngine;
 public class DisableMyPhysics : MonoBehaviour
 {
     [SerializeField] float delay = 2f;
+    [SerializeField] bool destroyMyCollider = false;
 
     private void OnEnable()
     {
@@ -16,5 +17,15 @@ public class DisableMyPhysics : MonoBehaviour
         Rigidbody body = GetComponent<Rigidbody>();
         body.useGravity = false;
         body.isKinematic = true;
+
+        if (destroyMyCollider)
+        {
+            var colliders = GetComponentsInParent<Collider>();
+
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                Destroy(colliders[i]);
+            }
+        }
     }
 }

@@ -34,7 +34,7 @@ public class MazeSpawner : MonoBehaviour {
 
            for (int j = 0; j < mfList.Length; j++)
             {
-                if (mfList[j].gameObject != null)                
+                if (mfList[j].gameObject != null && mfList[j].GetComponent<DisableMyPhysics>() == false)                
                     ToMergeObjectsList.Add(mfList[j].gameObject);
             }
 

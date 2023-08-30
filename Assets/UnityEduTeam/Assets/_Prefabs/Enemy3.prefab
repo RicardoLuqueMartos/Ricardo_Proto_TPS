@@ -524,7 +524,6 @@ GameObject:
   - component: {fileID: 195744275202379458}
   - component: {fileID: 135984726313231734}
   - component: {fileID: 114163584711596910}
-  - component: {fileID: 2402404883288824215}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Enemy
@@ -637,29 +636,8 @@ MonoBehaviour:
   walkSpeed: 3
   patrolRadius: 40
   navMeshAgent: {fileID: 195744275202379458}
-  animator: {fileID: 2402404883288824215}
+  animator: {fileID: 0}
   player: {fileID: 0}
---- !u!95 &2402404883288824215
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165304679689946}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b2928c7a4ab03a64e8394c852329d86c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1177562169185216
 GameObject:
   m_ObjectHideFlags: 0

@@ -876,7 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: randomSeed
-      value: 1004835341
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -943,6 +947,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199674839603299708, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199674839603299708, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b2a45a4eea505c4ab9a0def8c0518ff, type: 2}
@@ -984,6 +992,8 @@ MonoBehaviour:
   - {fileID: 1821342228691086, guid: 81a99551a762e954b9a02fb458ae6b59, type: 3}
   - {fileID: 1018563158858354, guid: 297c4762ebe2b3e42aa6ef2386a1ad52, type: 3}
   - {fileID: 1852220836126350, guid: 84b1d62228918e740a61b3b125dbbeae, type: 3}
+  SpawnPoints: []
+  MazeModules: []
 --- !u!4 &205124646
 Transform:
   m_ObjectHideFlags: 0
@@ -3180,10 +3190,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1fdab845b4487a4c860dd4293d1aa8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  Enemies: []
   EnemyPrefabs:
   - {fileID: 1793978803753062, guid: 671d5bb1e60302240a7739eb4930a2cf, type: 3}
   - {fileID: 1448267440622012, guid: baf36596fe8617243994e6f34688dc2e, type: 3}
   - {fileID: 1165304679689946, guid: c12a632329885364296e928757ea5ba2, type: 3}
+  EnemySpawnPoints: []
 --- !u!1 &980336814
 GameObject:
   m_ObjectHideFlags: 0
