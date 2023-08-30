@@ -1505,6 +1505,7 @@ GameObject:
   - component: {fileID: 195372769194648888}
   - component: {fileID: 114401410465547900}
   - component: {fileID: 135612076240131320}
+  - component: {fileID: 1346976835958752444}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -1603,6 +1604,9 @@ MonoBehaviour:
   runSpeed: 5
   walkSpeed: 3
   patrolRadius: 40
+  navMeshAgent: {fileID: 195372769194648888}
+  animator: {fileID: 1346976835958752444}
+  player: {fileID: 0}
 --- !u!135 &135612076240131320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1616,6 +1620,27 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.66
   m_Center: {x: 0, y: 1.19, z: 0.27}
+--- !u!95 &1346976835958752444
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793978803753062}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b2928c7a4ab03a64e8394c852329d86c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1809730459455012
 GameObject:
   m_ObjectHideFlags: 0
