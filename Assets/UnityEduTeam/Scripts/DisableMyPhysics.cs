@@ -15,9 +15,12 @@ public class DisableMyPhysics : MonoBehaviour
     private void DisablePhysics()
     {
         Rigidbody body = GetComponent<Rigidbody>();
-        body.useGravity = false;
-        body.isKinematic = true;
 
+        if (body != null)
+        {
+            body.useGravity = false;
+            body.isKinematic = true;
+        }
         if (destroyMyCollider)
         {
             var colliders = GetComponentsInParent<Collider>();
@@ -27,5 +30,10 @@ public class DisableMyPhysics : MonoBehaviour
                 Destroy(colliders[i]);
             }
         }
+
+        CombineChildrenAtTimeOrOrder comb = transform.GetComponentInParent<CombineChildrenAtTimeOrOrder>();
+
+        if (comb != null)
+            comb.Combine();
     }
 }
