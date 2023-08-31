@@ -5,11 +5,11 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 1
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 42e027c7ce820724e83b38c65f1ace66
+  m_OcclusionCullingData: {fileID: 36300000, guid: 423d7567b89302842b2bfe078cd06333, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -994,6 +994,7 @@ MonoBehaviour:
   - {fileID: 1852220836126350, guid: 84b1d62228918e740a61b3b125dbbeae, type: 3}
   SpawnPoints: []
   MazeModules: []
+  mazeToSpawn: {fileID: 0}
 --- !u!4 &205124646
 Transform:
   m_ObjectHideFlags: 0

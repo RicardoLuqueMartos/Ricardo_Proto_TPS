@@ -15,23 +15,38 @@ public class MazeSpawner : MonoBehaviour {
 
     [SerializeField] private List<GameObject> MazeModules = new List<GameObject>();
 
+    [SerializeField]
+    private GameObject mazeToSpawn = null;
 
+    // Use this for initialization
+    void Start () {
 
-	// Use this for initialization
-	void Start () {
-        SpawnPoints.AddRange(GameObject.FindGameObjectsWithTag("ModuleLoc"));
-                
-
-        //Boucle sur les modules du maze
-        for (int i = 0; i < SpawnPoints.Count; i++)
+        if (mazeToSpawn == null)
         {
 
-            GameObject instanceModule = Instantiate(Modules[Random.Range(0, Modules.Count)], SpawnPoints[i].transform.position, Quaternion.identity);
-            MazeModules.Add(instanceModule);
+            SpawnPoints.AddRange(GameObject.FindGameObjectsWithTag("ModuleLoc"));
 
-            MeshCombiner.PrepareCombine(instanceModule, false, false);
 
-            Destroy(SpawnPoints[i]);
+            //Boucle sur les modules du maze
+            for (int i = 0; i < SpawnPoints.Count; i++)
+            {
+
+                GameObject instanceModule = Instantiate(Modules[Random.Range(0, Modules.Count)], SpawnPoints[i].transform.position, Quaternion.identity);
+                MazeModules.Add(instanceModule);
+
+                MeshCombiner.PrepareCombine(instanceModule, false, false);
+
+                Destroy(SpawnPoints[i]);
+            }
         }
-    }	
+        else
+        {
+            InstantiateMaze();
+        }
+    }
+    
+    void InstantiateMaze()
+    {
+        GameObject maze = Instantiate(mazeToSpawn);
+    }
 }

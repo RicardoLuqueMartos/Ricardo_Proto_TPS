@@ -7,9 +7,12 @@ using UnityEngine;
 public class MeshCombiner : MonoBehaviour
 {
 
-    public static void PrepareCombine(GameObject parentObj, bool switchToStatic, bool IsDisableMyPhysics) {
+
+
+    public static void PrepareCombine(GameObject parentObj, bool switchToStatic, bool IsDisableMyPhysics/*, bool ByMesh*/) {
 
         List<GameObject> ToMergeObjectsList = new List<GameObject>();
+        List<GameObject> ToMergeObjectsByMeshList = new List<GameObject>();
 
         var mfList = parentObj.transform.GetComponentsInChildren<MeshFilter>();
         Debug.Log(parentObj.name + " "+ mfList.Length);

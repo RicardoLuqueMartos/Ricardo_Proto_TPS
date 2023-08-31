@@ -30,10 +30,11 @@ public class DisableMyPhysics : MonoBehaviour
                 Destroy(colliders[i]);
             }
         }
-
+        /*
         CombineChildrenAtTimeOrOrder comb = transform.GetComponentInParent<CombineChildrenAtTimeOrOrder>();
 
         if (comb != null)
             comb.Combine();
+        */
     }
 }
